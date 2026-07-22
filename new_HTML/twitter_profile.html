@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .card {
+            width: 300px;
+            height: 400px;
+            background-color: rgb(124, 209, 252);
+            margin: 30px;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 1px 1px 10px black;
+            overflow: hidden;
+            
+        }
+        .top {
+            width: 300px;
+            height: 37%;
+            background-color: rgb(81, 153, 255);
+            
+        }
+        .profile {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            position: absolute;
+            top: 110px;
+            left: 30px;
+            border: 3px solid rgb(124, 209, 252);
+        }
+        .follow{
+            width: 90px;
+            height: 7.2%;
+            background-color: blue;
+            position: absolute;
+            border-radius: 5px;
+            top: 133px;
+            left: 170px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: aliceblue;
+        }
+        .name{
+            margin: 20px;
+            padding-top: 30px;
+            padding-left: 6px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        .username{
+            font-size: 12px;
+            font-family: sans-serif;
+            padding-left: 25px;
+            position: absolute;
+            top: 218px;
+            color: grey;
+        }
+        .desc {
+            font-size: 15px;
+            padding-left: 25px;
+            padding-top: 10px;
+        }
+        .follows{
+            font-size: 14px;
+            padding-top: 15px;
+            padding-left: 25px;
+        }
+        .link {
+            width: 15px;
+            
+            position: absolute;
+            bottom: 50px;
+            left: 23px;
+            opacity: 50%;
+            filter: grayscale(100%);
+        }
+        .example{
+            filter: grayscale(100%);
+            opacity: 50%;
+            padding-top: 18px;
+            padding-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="profile" src="https://imgs.search.brave.com/HUtiRo6SuzWxsE9AQdExMYy14ZGoTcgNSiDI-mcggJI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9mZ28u/Z2FtZXByZXNzLmdn/L3NpdGVzL2RlZmF1/bHQvZmlsZXMvMjAx/OS0wNC9GYXRlR3Jh/bmRfT3JkZXJfLV9D/YXJkX0NvbGxlY3Rf/MTc0LnBuZw" alt="">
+        <div class="follow"> follow</div>
+        <div class="top"></div>
+        <div class="bottom">
+            <h4 class="name">HandsomeFella</h4>
+            <p class="username">@handsome_dude</p>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, quis.</p>
+            <p class="follows">
+                <span style="font-weight: bold;">000</span>
+                <span style="color: grey; margin-right: 13px;"> Following</span>
+                <span style="font-weight: bold;">000.0k</span>
+                <span style="color: grey;"> Followers</span>
+            </p>
+            <img class="link" src="https://img.icons8.com/?size=100&id=59826&format=png&color=000000" alt="">
+            <p class="example">example.com</p>
+        </div>
+    </div>
+</body>
+</html>

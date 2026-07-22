@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+      @font-face {
+        font-family: "MyFont";
+        src: url(../font/Chillax-Variable.ttf);
+      }
+      * {
+        margin: 0;
+      }
+      .background {
+        width: 100%;
+        height: 100vh;
+        background-color: lime;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+      }
+      .background > .navspace {
+        width: 1100px;
+        height: 10%;
+        background-color: aliceblue;
+        border-radius: 20px;
+        box-sizing: border-box;
+      }
+      .navspace > .inside {
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .logo > p {
+        font-family: "MyFont";
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .inside > .nav > a {
+        font-family: 'MyFont';
+        padding-right: 40px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+      }
+      .inside > .button > button {
+        width: 140px;
+        height: 30px;
+        background-color: lime;
+        border-radius: 5px;
+        color: white;
+        border: none;
+        padding: 0 20px;
+        gap: 15px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="navspace">
+        <div class="inside">
+          <div class="logo">
+            <img
+              width="40px"
+              height="40px"
+              src="../imaage_stock/game.png"
+              alt=""
+            />
+            <p>Ploy's Store</p>
+          </div>
+          <div class="nav">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Product</a>
+            <a href="">Boost</a>
+            <a href="">Contact</a>
+          </div>
+
+          <div class="button">
+            <button>Get started
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

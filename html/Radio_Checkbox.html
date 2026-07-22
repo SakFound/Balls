@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <p>Gender</p>
+      <input type="radio" name="Gender" id="Male" />
+      <label for="Male">Male</label><br />
+
+      <input type="radio" name="Gender" id="Female" />
+      <label for="Female">Female</label><br />
+
+      <input type="radio" name="Gender" id="Other" />
+      <label for="Other">Other</label><br />
+
+      <button type="submit">submit</button>
+    </form>
+    <br />
+    <form>
+      <p>Hobbies</p>
+      <input type="checkbox" name="Hobbies" id="reading" value="reading" />
+      <label for="reading">reading</label><br />
+
+      <input type="checkbox" name="Hobbies" id="swimming" value="swimming" />
+      <label for="swimming">swimming</label><br />
+
+      <input type="checkbox" name="Hobbies" id="jogging" value="jogging" />
+      <label for="jogging">jogging</label><br />
+
+      <button type="submit">submit</button>
+    </form>
+
+    <form>
+      <select>
+        <option disabled selected>Choose ye country</option>
+        <!-- 2. Here is what i meant and the "disbaled" is for unable to choose it-->
+        <option value="Kamjea">Kamjea</option>
+        <option value="Youn">Youn</option>
+        <option value="Lao">Lao</option>
+      </select>
+
+      <!-- "option" is for choosing things when you create a "select"-->
+      <!-- 1. while "selected" that you write will automatically shows up-->
+    </form>
+    <br />
+    <form>
+      <textarea
+        name=""
+        id=""
+        rows="6"
+        cols="7"
+        placeholder="Write soemthing in here"
+      ></textarea>
+    </form>
+    <br />
+    <form>
+      <select name="" id="">
+        <option disabled selected>Choose the option</option>
+        <optgroup label="Web Dev">
+          <option value="">HTML</option>
+          <option value="">CSS</option>
+          <option value="">JavaScript</option>
+        </optgroup>
+        <optgroup label="Mobile dev">
+          <option value="">java</option>
+        </optgroup>
+      </select>
+    </form>
+    <br />
+    <form action="">
+      <input type="range" name="" id="" min="0" max="30" step="3" />
+    </form>
+    <form action="">
+      <fieldset style="width: 250px">
+        <legend>persoal info</legend>
+
+        <label for="email">email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="dak email hg jol mor"
+        /><br /> <br>
+
+        <label for="password">password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+        <br><br>
+        <button>sign in</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

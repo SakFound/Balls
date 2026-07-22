@@ -1,0 +1,13 @@
+.text {
+    color: palegoldenrod;
+    font-family: cursive;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px red;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    line-height: 15px;
+
+}

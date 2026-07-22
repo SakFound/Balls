@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+        }
+        @font-face {
+        font-family: "MyFont";
+        src: url(../font/Chillax-Variable.ttf);
+        }
+        .bg{
+            width: 100%;
+            height: 200vh;
+            background-color: #BE1A1A;
+        }
+        .navbar{
+            width: 100%;
+            height: 60px;
+            background-color: #D0311E;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'MyFont';
+            box-sizing: border-box;
+            padding: 40px;
+        }
+        .navbar>.home>a{
+            text-decoration: none;
+            color: #F7D87F;
+            font-size: 30px;
+        }
+        .navbar>.navopt>a{
+            text-decoration: none;
+            color: #F7D87F;
+            padding-right: 40px;
+            gap: 10px;
+        }
+        .headcontent{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 30px;
+            background-image: url(../imaage_stock/persona.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #F7D87F;
+            text-shadow: 0 0px 7px black;
+        }
+        .headcontent>.title>h1{
+            width: 300px;
+            font-family: monospace;
+        }
+        .headcontent>.titledesc>p{
+            width: 300px;
+            padding-top: 30px;
+            font-family: monospace;
+            font-size: 15px;
+        }
+        .headcontent>.titleBTN{
+            padding-top: 30px;
+        }
+        .headcontent>.titleBTN>button{
+            width: 90px;
+            height: 40px;
+            border-radius: 7px;
+            border: none;
+            background-color: gold;
+            font-family: monospace;
+        }
+        .option{
+            width: 100%;
+            height: 40px;
+            background-color: #D0311E;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'MyFont';
+            box-sizing: border-box;
+            padding: 30px;
+            padding-right: 110px;
+        }
+        .option>a{
+            text-decoration: none;
+            color: #F7D87F;
+        }
+        .liner{
+            width: 90%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding-top: 15px;
+        }
+        .liner>span{
+            padding-top: 1px;
+            color: #F7D87F;
+            font-family: 'MyFont';
+        }
+        .liner>.line1{
+            flex: 1;
+            height: 1px;
+            background: #F7D87F;
+        }
+        .liner>.line2{
+            flex: 1;
+            height: 1px;
+            background: #F7D87F;
+        }
+        .contentcontain{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 30px;
+            padding-left: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .contentcontain>.contentbox{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background-color: #F8EBAB;
+            box-sizing: border-box;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        .contentcontain>.contentbox>.contentINSIDE{
+            width: 100%;
+            height: 160px;
+            border-radius: 5px;
+            background-image: url(https://i.pinimg.com/736x/82/55/03/8255033248d018b6c5f3d460b2deec16.jpg);
+            background-size: cover;
+        }
+        .contentcontain>.contentbox>.contentINSIDE2{
+            width: 100%;
+            height: 160px;
+            border-radius: 5px;
+            background-image: url(https://i.pinimg.com/1200x/53/a6/90/53a6907797457c9d87844c80fb58e598.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .contentcontain>.contentbox>.contentINSIDE3{
+            width: 100%;
+            height: 160px;
+            border-radius: 5px;
+            background-image: url(https://i.pinimg.com/736x/b2/8a/cf/b28acf804445b142bd4809753f069140.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .contentcontain>.contentbox>.contentINSIDE4{
+            width: 100%;
+            height: 160px;
+            border-radius: 5px;
+            background-image: url(https://i.pinimg.com/1200x/29/3f/b0/293fb003e5230e0a53a9c78a9bb19cbe.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .contentcontain>.contentbox>.ProdName>h2{
+            font-family: monospace;
+            font-size: 18px;
+            padding-top: 10px;
+        }
+        .contentcontain>.contentbox>.ProdDesc>p{
+            font-family: monospace;
+            padding-top: 10px;
+        }
+        .contentcontain>.contentbox>.buyBTN{
+            padding-top: 10px;
+        }
+        .contentcontain>.contentbox>.buyBTN>button{
+            font-family: monospace;
+            width: auto;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            background-color: #D0311E;
+            color: #F7D87F;
+        }
+        .eventcontain{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 30px;
+            padding-left: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .eventcontain>.eventctnbox{
+            width: 500px;
+            height: 300px;
+            background-color: #F7D87F;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .eventcontain>.eventctnbox>.eventinside{
+            width: 100%;
+            height: 85%;
+            background-image: url(https://imgs.search.brave.com/uJAHPL1_6LEtsK0zB9FvTce32GEaAZNPAnMw0jpzbvk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuZ29zdWdhbWVy/cy5uZXQvYmIvODAv/ZjgvYzRhY2FhNjBh/NGQ1ZDc0ZDFiMzEz/YzZhZGFmY2Y4OWFl/ODI4ZWQ2ODdmMjJi/MzdiMmFjOTYxNDk0/OS53ZWJwP3c9MTYw/MA);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .eventcontain>.eventctnbox>.eventinside2{
+            width: 100%;
+            height: 85%;
+            background-image: url(https://imgs.search.brave.com/Yi6ijtiYm7BIlaT9qB9BvEAYbd4UAaUbw5tKfGGm-X0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93b3Js/ZC5ob25vcm9ma2lu/Z3MuY29tL3psa2Rh/dGFzeXMvaXAvaGVy/by9tL2VuLy9pbWFn/ZS8yMDI2MDcxNi8x/Nzg0MTY4NTAzNzQ0/NS5qcGc);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .eventcontain>.eventctnbox>.eventinside3{
+            width: 100%;
+            height: 85%;
+            background-image: url(https://imgs.search.brave.com/jxXwhgrynUjXruS6_iY7pFc_9u1H_QkqsL-sAbRjaWg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bWFydmVsLmNvbS9j/b250ZW50LzJ4L3N1/bW1lcl9zcGVjaWFs/X2V2ZW50LndlYnA);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .eventctnbox>.title_event>h3{
+            font-family:monospace;
+            font-size: 20px;
+            padding-top: 12px;
+        }
+        .footer{
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 50px ;
+        }
+        .footer>.icon{
+            font-size: 25px;
+            display: flex;
+            gap: 15px;
+            color: #F7D87F;
+        }
+        .footer>.PrivNTerm{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            font-family: monospace;
+            font-size: 15px;
+            color: #F8EBAB;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <header>
+            <main>
+                <section>
+                    <div class="navbar">
+                        <div class="home">
+                            <a href="#">Joy's Store</a>
+                        </div>
+                        <div class="navopt">
+                            <a href="#">About</a>
+                            <a href="#">Catalog</a>
+                            <a href="#">Contacts</a>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+                    <div class="headcontent">
+                        <div class="title">
+                            <h1>Don't want to be a hard stucker?</h1>
+                        </div>
+                        <div class="titledesc">
+                            <p>Why don't you try our coaching / boosting service!</p>
+                        </div>
+                        <div class="titleBTN">
+                            <button>See Here</button>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <a href="#">
+                            <i class="fa-solid fa-tag"></i>
+                            Discount</a>
+                        <a href="#">
+                            <i class="fa-regular fa-gem"></i>
+                            Top up</a>
+                        <a href="#">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            Price</a>
+                    </div>
+                </section>
+                <section>
+                    <div class="liner">
+                        <div class="line1"></div>
+                        <span>Popular Product</span>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="contentcontain">
+                        <div class="contentbox">
+                            <div class="contentINSIDE">
+                            </div>
+                            <div class="ProdName">
+                                <h2>Mobile Legend (Khmer server)</h2>
+                            </div>
+                            <div class="ProdDesc">
+                                <p>Safe & Fast delivery. 10% Discount for new user</p>
+                            </div>
+                            <div class="buyBTN">
+                                <button>Buy now</button>
+                            </div>
+                        </div>
+                        <div class="contentbox">
+                            <div class="contentINSIDE2">
+                            </div>
+                            <div class="ProdName">
+                                <h2>Valorant (Khmer server)</h2>
+                            </div>
+                            <div class="ProdDesc">
+                                <p>Safe & Fast delivery. 10% Discount for new user</p>
+                            </div>
+                            <div class="buyBTN">
+                                <button>Buy now</button>
+                            </div>
+                        </div>
+                        <div class="contentbox">
+                            <div class="contentINSIDE3">
+                            </div>
+                            <div class="ProdName">
+                                <h2>Honor of King (Global server)</h2>
+                            </div>
+                            <div class="ProdDesc">
+                                <p>Safe & Fast delivery. 10% Discount for new user</p>
+                            </div>
+                            <div class="buyBTN">
+                                <button>Buy now</button>
+                            </div>
+                        </div>
+                        <div class="contentbox">
+                            <div class="contentINSIDE4">
+                            </div>
+                            <div class="ProdName">
+                                <h2>Roblox</h2>
+                            </div>
+                            <div class="ProdDesc">
+                                <p>Safe & Fast delivery. 10% Discount for new user</p>
+                            </div>
+                            <div class="buyBTN">
+                                <button>Buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="liner">
+                        <div class="line1"></div>
+                        <span>Current Event</span>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="eventcontain">
+                        <div class="eventctnbox">
+                            <div class="eventinside"></div>
+                            <div class="title_event">
+                                <h3>MLBB x Street Fighter</h3>
+                            </div>
+                        </div>
+                        <div class="eventctnbox">
+                            <div class="eventinside2"></div>
+                            <div class="title_event">
+                                <h3>HOK New Flawless</h3>
+                            </div>
+                        </div>
+                        <div class="eventctnbox">
+                            <div class="eventinside3"></div>
+                            <div class="title_event">
+                                <h3>Marvel Rivals Summer</h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+            </main>
+        </header>
+        <footer>
+            <hr style="border: 1px solid #F7D87F;">
+            <div class="footer">
+                <div class="icon">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+                <div class="PrivNTerm">
+                    <h3>Privacy & Policy</h3>
+                    <h3>Term & Condition</h3>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
